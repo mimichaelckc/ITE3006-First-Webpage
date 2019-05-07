@@ -1,0 +1,71 @@
+/*the visual setting of every player*/
+.player {
+    display: inline-block;
+    border-radius: 5px;
+    background-image: url(backgroundImage.jpg);
+    margin: 40px;
+    background-repeat: no-repeat;
+    border: 1px solid transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+/*the visual setting of every player desc*/
+.player .desc {
+    background-color: #d6d5d1;
+    font-family: fantasy;
+    text-align: center;
+    padding: 5px;
+    margin-top: -4px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/*the effect when hovering the player*/
+.player:hover img {
+    opacity: 0.7;
+}
+/*the effect when hovering the player*/
+.player:hover .desc {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/*vanish the stat at first*/
+.player .stat {
+    background-color: aliceblue;
+    font-family: monospace;
+    text-align: center;
+    width: 260px;
+    display: none;
+    position: absolute;
+}
+/*the effect when hovering the player show the detail stat */
+.player:hover .stat {
+    display: inline-block;
+    border-bottom: 1px solid aliceblue;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/*the visual setting of every position title*/
+h1 {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: floralwhite;
+    text-shadow: 4px 4px 4px rgba(186, 186, 186, 0.73);
+}
+
+/* when the webpage screen width is small than 1070px, it will disable the hover effect */
+@media (max-width: 1070px) {
+  
+  .player .stat {
+    display: inline-block;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .player .desc {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  h1{
+    margin-top: 50px;
+  }
+}

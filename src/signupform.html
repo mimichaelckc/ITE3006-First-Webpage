@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up Now!!</title>
+    <link rel="stylesheet" href="signupform.css">
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="myScript.js"></script>
+</head>
+
+<body bgcolor="#ebebeb">
+
+
+    <a href="index.html">
+        <img src="300px-HoustonRockets.png" alt="">
+    </a>
+     <span id="textbox"></span>
+    <nav id="navbar" class="myNavBar">
+        <ul>
+            <li><a href="index.html">News</a></li>
+            <li class="dropdown">
+                <a href="teampage.html" class="dropbtn">Team</a>
+                <div class="dropdown-content">
+                    <a href="teampage.html#guard">Guard</a>
+                    <a href="teampage.html#forward">Forward</a>
+                    <a href="teampage.html#center">Center</a>
+
+                </div>
+            </li>
+            <li><a href="VideoPage.html">Video</a></li>
+            <li style="float:right"><a href="login.html" id="login">Log in</a></li>
+            <li style="float:right"><a href="signupform.html" id="signup">Sign Up</a></li>
+
+        </ul>
+    </nav>
+    <h1>Become to our member now!</h1>
+    <hr>
+    <div>
+        <form name="f1">
+
+            <label for="username">Username<span id="required">*</span></label>
+
+            <input type="text" id="username" name="username" required="required">
+
+            <label for="password">Password<span id="required">*</span></label>
+
+            <input type="password" id="pwd" name="pwd" required="required" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" onfocus="show()" onmouseout="noshow()" onkeyup="validatePwd()" onkeyup='checkPwd()'>
+
+            <input type="checkbox" onclick="myFunction()">Show Password
+            <br><br>
+
+            <div id="msg">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </div>
+            <label for="password">Re-enter Password<span id="required">*</span></label>
+
+            <input type="password" id="re" name="re" required="required" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" onkeyup="checkPwd()">
+
+            <div id="validCheck"></div>
+
+            <label for="fname">First Name</label>
+
+            <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+            <label for="lname">Last Name</label>
+
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label> Gender:</label>
+            <input type="radio" name="gender" value="M" checked/> <span class="option">Male</span>
+            <input type="radio" name="gender" value="F" />
+            <span class="option">Female</span><br />
+
+            <label for="lname">Email Address<span id="required">*</span></label>
+
+            <input type="email" id="email" name="email" required="required" placeholder="Your email..">
+
+            <label for="country">Country of Residence<span id="required">*</span></label>
+
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="hongkong" selected>Hong Kong</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="uk">Unite Kingdom</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Japan">Japan</option>
+
+            </select>
+            <label>Terms and Policy</label>
+            <div class="terms">A. Registration Data: If you opt to register for any portion of this Site (including the Mobile Service, as defined below), you agree to: (i) provide true, accurate and complete information about yourself as prompted by the registration form ("Registration Data") and (ii) maintain and promptly update the Registration Data to keep it true, accurate, current and complete. If the Operator has reasonable grounds to suspect that the Registration Data is untrue, inaccurate or incomplete, the Operator shall have the right to suspend or terminate your account and refuse any and all current or future use of the Site or the Mobile Service (or any portion thereof). You acknowledge and agree that the Operator shall have no liability associated with or arising from your failure to maintain accurate Registration Data, including, but not limited to, your failure to receive critical information about the Site or the Mobile Service or your account. You further agree that the Operator is authorized to verify such Registration Data.
+
+                You acknowledge and agree that the Operator may rely on the Registration Data to send you important information and notices regarding your account and the Site. From time to time, we may send you newsletters and other promotions by email or SMS. You can unsubscribe from our newsletters and other promotions through the unsubscribe mechanism contained in the applicable message. For more information about our text message campaigns, please see Section 8 below (titled "Mobile Content & Text Message Campaigns").
+
+                B. Username and Password: If you opt to register for any portion of this Site (including the Mobile Service), you may be required to establish an account and provide a username and password. You authorize the Operator to process any and all account transactions initiated through the use of your username and password. You are solely responsible for maintaining the confidentiality of your username and password and must immediately notify the Operator of any unauthorized use of your username and password. You acknowledge and agree that you are responsible for any unauthorized activities, charges and/or liabilities made through the use of your username and password. In no event will the Operator be liable for the unauthorized use or misuse of your username and/or password. The Operator may need to change usernames allocated to certain of our products and services and the Operator reserves the right to do so. You will be informed of this if the Operator makes such a change. The Operator collects and uses your username, password and other Registration Data in accordance with the Privacy Policy of the Site.
+
+                C. Access Without Registration: This Site may provide you with access to some products and services without you having to register as a user, such as signing up for Mobile Alerts via SMS. In each such case your identification is based on means of identification that the Operator deems appropriate, such as your mobile telephone number.</div>
+            <p>By creating an account you agree to our <span style="border-bottom:1px solid black; ">Terms & Policy</span></p>
+            <input type="radio" name="terms" required="required" value="Y" /> <span class="option">Yes</span>
+            <input type="radio" name="terms" value="N" onclick="alert('To become our member, please select Yes');" />
+            <span class="option">No</span>
+            <div class="btn">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+
+</body></html>

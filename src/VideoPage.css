@@ -1,0 +1,101 @@
+/* the visual setting of every video */
+
+div.video {
+  background-color: #555050;
+  margin-left: 4.4%;
+  margin-top: 4%;
+  display: inline-block;
+  width: 330px;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+
+/* the effect that will be show when hoving the video*/
+
+.video:hover {
+  background-color: #934343;
+  border: 1px solid white;
+}
+
+/* the visual setting of every video image */
+
+div.video img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+/* the visual setting of every title of the video */
+
+div.title {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  font-family: cursive;
+  text-decoration: none;
+}
+
+/* the visual setting of video player */
+
+iframe {
+  margin-top: 50px;
+  padding:auto;
+  width: 90%;
+  height: 700px;
+}
+
+/* the visual setting of video List */
+
+div.videoList {
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-family: fantasy;
+}
+
+/* the effect that will be show when the webpage screen width is small than 1250px */
+
+@media only screen and (max-width: 1250px) {
+  
+  div.videoList {
+    text-align: left;
+  }
+
+  /* the video will take up an entire line and the title will be placed to the right */
+  div.video {
+    margin-left: 3%;
+    display: inline-block;
+    width: 90%;
+  }
+  
+  iframe {
+    width: 100%;
+  }
+  /* the visual setting of every video image */
+  div.video img {
+    width: auto;
+    float: left;
+  }
+
+  /* disable the login and signup bottom */
+  #login,
+  #signup {
+    display: none;
+  }
+
+  /* the effect that will be show when the webpage screen width is small than 600px */
+  @media only screen and (max-width: 600px) {
+    
+    div.video img {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 10px;
+    }
+
+    div.title {
+      font-size: 15px;
+    }
+  }
+}

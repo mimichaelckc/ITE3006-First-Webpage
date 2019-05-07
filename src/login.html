@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Log in</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="index.css">
+    <script></script>
+</head>
+
+<body bgcolor="#ebebeb">
+
+    <a href="index.html">
+        <img src="300px-HoustonRockets.png" alt="">
+    </a>
+
+    <span id="textbox"></span>
+    <nav id="navbar" class="myNavBar">
+        <ul>
+            <li><a href="index.html">News</a></li>
+            <li class="dropdown">
+                <a href="teampage.html" class="dropbtn">Team</a>
+                <div class="dropdown-content">
+                    <a href="teampage.html#guard">Guard</a>
+                    <a href="teampage.html#forward">Forward</a>
+                    <a href="teampage.html#center">Center</a>
+
+                </div>
+            </li>
+            <li><a href="VideoPage.html">Video</a></li>
+            <li style="float:right"><a href="login.html" id="login">Log in</a></li>
+            <li style="float:right"><a href="signupform.html" id="signup">Sign Up</a></li>
+
+        </ul>
+    </nav>
+    
+    <h1>log in now!</h1>
+    <hr>
+    <div>
+        <form name="f1">
+
+            <label for="username">Username</label>
+
+            <input type="text" id="username" name="username" required="required">
+
+            <label for="password">Password</label>
+
+            <input type="password" id="pwd" name="pwd" required="required" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" onfocus="show()" onmouseout="noshow()" onkeyup="validatePwd()" onkeyup='checkPwd()'>
+            
+            <input type="checkbox" onclick="myFunction()">Show Password
+            <br><br>
+
+
+            <div class="btn">
+                <input type="submit" value="Login">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

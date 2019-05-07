@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Video</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="VideoPage.css">
+</head>
+
+<body bgcolor="#222121">
+
+
+  <a href="index.html">
+        <img src="300px-HoustonRockets.png" alt="">
+    </a>
+  <span id="textbox"></span>
+  <nav id="navbar" class="myNavBar">
+    <ul>
+      <li><a href="index.html">News</a></li>
+      <li class="dropdown">
+        <a href="teampage.html" class="dropbtn">Team</a>
+        <div class="dropdown-content">
+          <a href="teampage.html#guard">Guard</a>
+          <a href="teampage.html#forward">Forward</a>
+          <a href="teampage.html#center">Center</a>
+
+        </div>
+      </li>
+      <li><a href="VideoPage.html">Video</a></li>
+      <li style="float:right"><a href="login.html" id="login">Log in</a></li>
+      <li style="float:right"><a href="signupform.html" id="signup">Sign Up</a></li>
+
+    </ul>
+  </nav>
+
+  <div class="videoArea" align="center">
+    <iframe src="https://www.youtube.com/embed/uq0-ncI0MNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <div class="videoList">Video List</div>
+  <hr>
+
+  <div class="video">
+    <a href="video1.html">
+            <img src="Utah%20Jazz%20vs%20Houston%20Rockets.webp" alt=""></a>
+    <div class="title">Utah Jazz vs Houston Rockets - Game 1 - Full Game Highlights | 2019 NBA Playoffs NBA Season</div>
+  </div>
+
+  <div class="video"><a href="video2.html"><img src="Houston%20Rockets%20vs%20OKC%20Thunder.webp" alt=""></a>
+    <div class="title">Houston Rockets vs OKC Thunder - Full Game Highlights | April 9, 2019 | 2018-19 NBA Season</div>
+  </div>
+
+  <div class="video"><a href="video3.html">
+            <img src="Golden%20State%20Warriors%20vs%20Houston%20Rockets.webp" alt=""></a>
+    <div class="title">Golden State Warriors vs Houston Rockets - Full Highlights | March 13, 2019 | 2018-19 NBA Season</div>
+  </div>
+
+  <div class="video"><a href="video4.html">
+            <img src="Houston%20Rockets%20vs%20Boston%20Celtics.webp" alt=""></a>
+    <div class="title">Houston Rockets vs Boston Celtics - Full Game Highlights | March 3, 2019 | 2018-19 NBA Season</div>
+  </div>
+
+  <div class="video"><a href="video5.html">
+            <img src="Houston%20Rockets%20vs%20Toronto%20Raptors.webp" alt=""></a>
+    <div class="title">Houston Rockets vs Toronto Raptors - Full Game Highlights | March 5, 2019 | 2018-19 NBA Season</div>
+  </div>
+
+  <div class="video"><a href="video7.html">
+            <img src="Houston%20Rockets%20vs%20Milwaukee%20Bucks.webp" alt=""></a>
+    <div class="title">Houston Rockets vs Milwaukee Bucks - Full Game Highlights | March 26, 2019 | 2018-19 NBA Season
+    </div>
+  </div>
+
+  <div class="video"><a href="video8.html">
+            <img src="Charlotte%20Hornets%20vs%20Houston%20Rockets.webp" alt=""></a>
+    <div class="title">Charlotte Hornets vs Houston Rockets - Full Game Highlights | March 11, 2019 | 2018-19 NBA Season</div>
+  </div>
+
+  <div class="video"><a href="video9.html">
+            <img src="San%20Antonio%20Spurs%20vs%20Houston%20Rockets.webp" alt=""></a>
+    <div class="title">San Antonio Spurs vs Houston Rockets - Full Game Highlights | March 22, 2019 | 2018-19 NBA Season</div>
+  </div>
+
+  <button class="open-button" onclick="openForm()">Open Form</button>
+
+  <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Login</h1>
+
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+
+      <button type="submit" class="btn">Login</button>
+
+      <button class="btn"><a href="signupform.html">Sign up</a></button>
+
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+</body>
+
+<script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+
+</script>
+
+</html>

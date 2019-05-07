@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Houston Rockets</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body bgcolor="#222121" onload="subscript()">
+
+    <a href="index.html">
+        <img src="300px-HoustonRockets.png" alt="">
+    </a>
+    <span id="textbox"></span>
+    <nav id="navbar" class="myNavBar">
+        <ul>
+            <li><a href="">News</a></li>
+            <li class="dropdown">
+                <a href="teampage.html" class="dropbtn">Team</a>
+                <div class="dropdown-content">
+                    <a href="teampage.html#guard">Guard</a>
+                    <a href="teampage.html#forward">Forward</a>
+                    <a href="teampage.html#center">Center</a>
+
+                </div>
+            </li>
+            <li><a href="VideoPage.html">Video</a></li>
+            <li style="float:right"><a href="login.html" id="login">Log in</a></li>
+            <li style="float:right"><a href="signupform.html" id="signup">Sign Up</a></li>
+
+        </ul>
+    </nav>
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+
+            <img src="banner1.jpg" style="width:100%; height: 400px">
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="banner2.jpg" style="width:100%; height:  400px">
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="banner3.jpg" style="width:100%; height:  400px">
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="banner4.jpg" style="width:100%; height:  400px">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+
+    <div class="bigNews">
+        <img src="gettyimages-1134780412_1.jpg" style="width:100%">
+        <div class="container">
+            <h1>James Harden Named NBA Western Conference Player of the Month for March/April</h1>
+            <p class="date">April 12, 2019</p>
+            <p>HOUSTON – Today, the NBA announced that Houston Rockets guard James Harden was named NBA Western Conference Player of the Month for games played in March and April. It is his third time winning the award this season, and the eighth of his career, all coming as a Rocket.</p>
+            <p>The Rockets were 16-4 over the final two months of the regular season, posting the highest-winning percentage in the NBA. Houston outscored opponents by an average of 12.8 points in those games with Harden recording a league-best plus/minus rating of +241 over that span. Harden scored more points (696) than minutes played (695) over the final 20 games and nearly accomplished that feat for the season (2,818 points in 2,867 minutes played).</p>
+        </div>
+    </div>
+
+
+    <div class="row">
+
+        <div class="column">
+            <div class="smallNews">
+                <img src="gettyimages-1132393823.jpg" style="width:100%">
+                <div class="container">
+                    <h1><a href="https://www.nba.com/rockets/news/rockets-sign-michael-frazier">Rockets Sign Michael Frazier in April for the Play-Off</a></h1>
+                    <p class="date">April 12, 2019</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="smallNews">
+                <img src="img_3435.jpg" style="width:100%">
+                <div class="container">
+                    <h1><a href="https://www.nba.com/rockets/news/james-harden-named-western-conference-player-week-6">James Harden Named Western Conference Player
+                        </a></h1>
+                    <p class="date">April 12, 2019</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="smallNews">
+                <img src="screen_shot_2019-03-13_at_3.36.49_pm.png" style="width:100%">
+                <div class="container">
+                    <h1><a href="https://www.nba.com/rockets/news/rockets-convert-contract-danuel-house-jr">Rockets Convert Contract of Danuel House Jr.</a></h1>
+                    <p class="date">April 12, 2019</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="smallNews">
+                <img src="gettyimages-1097961444.jpg" style="width:100%">
+                <div class="container">
+                    <h1><a href="https://www.nba.com/rockets/news/qa-faried-relishing-his-manimal-revival-rockets">Faried relishing his 'Manimal' revival with Rockets</a></h1>
+                    <p class="date">April 8, 2019</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="smallNews">
+                <img src="shump.jpg" style="width:100%">
+                <div class="container">
+                    <h1><a href="https://www.nba.com/rockets/rockets-acquire-iman-shumpert">Rockets Acquire Iman Shumpert to prepare Play-Off</a></h1>
+                    <p class="date">April 4, 2019</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="smallNews">
+                <img src="getty-images-1094693944.jpg" style="width:100%">
+                <div class="container">
+                    <h1><a href="https://www.nba.com/rockets/news/james-hardens-unstoppable-maddening-beautiful-game">James Harden's unstoppable, maddening, beautiful game</a></h1>
+                    <p class="date">April 1, 2019</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <button class="open-button" onclick="openForm()">Open Form</button>
+
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <h1>Login</h1>
+
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+
+            <button type="submit" class="btn">Login</button>
+
+            <button class="btn"><a href="signupform.html">Sign up</a></button>
+
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+
+</body>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    var checking = true;
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+
+    //show alert ask user signup now or later
+    function subscript() {
+        if (confirm("Please sign up to our member!")) {
+            window.location.href = "signupform.html";
+        } else {
+            alert("You can sign up later!");
+        }
+    }
+
+    //open the small pop form 
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+    //close the small pop form 
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+</script></html>
